@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Be My Valentine ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page5">
+<script src="effects.js"></script>
+<script src="music.js"></script>
+
+<div class="container">
+  <h1>Suryansh 💖</h1>
+  <p>
+    Will you be my Valentine  
+    today and every day?
+  </p>
+
+  <button onclick="celebrate()">YES ❤️</button>
+</div>
+
+<script>
+function celebrate() {
+  for (let i = 0; i < 40; i++) {
+    const s = document.createElement("div");
+    s.className = "sparkle";
+    s.style.left = Math.random() * 100 + "vw";
+    s.style.top = Math.random() * 100 + "vh";
+    document.body.appendChild(s);
+    setTimeout(() => s.remove(), 1000);
+  }
+
+  setTimeout(() => {
+    window.location.href = "secret.html";
+  }, 1200);
+}
+</script>
+
+</body>
+</html>
